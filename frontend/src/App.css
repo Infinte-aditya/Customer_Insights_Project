@@ -1,87 +1,46 @@
-.App {
-  text-align: center;
-  padding: 20px;
-}
-
-.App-header {
-  background-color: #282c34;
-  color: white;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.feedback-form {
-  text-align: left;
-  margin-top: 20px;
-  max-width: 400px;
-  margin: auto;
-}
-
-.feedback-form div {
-  margin-bottom: 10px;
-}
-
-.feedback-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.feedback-form input, .feedback-form textarea {
-  width: 100%;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.feedback-form button {
-  background-color: #61dafb;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.feedback-form button:hover {
-  background-color: #21a1f1;
-}
+/* Dark Space Theme */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-}
-
-.App {
+  background: linear-gradient(180deg, #000428, #004e92); /* Space-like dark gradient */
+  min-height: 100vh;
+  color: #fff;
+  font-family: Arial, sans-serif;
   text-align: center;
+  padding-top: 20px;
+}
+
+.paper {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
   padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-nav {
-  margin: 20px 0;
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00BFFF; /* Neon-like color */
 }
 
-nav a {
-  font-size: 18px;
-  margin: 0 15px;
-  text-decoration: none;
-  color: #1976d2;
+.textField {
+  margin-bottom: 15px;
+  color: #fff; /* White text color in inputs */
 }
 
-nav a:hover {
-  color: #1565c0;
+.button {
+  background-color: #00BFFF;
+  color: #000;
+}
+
+.button:hover {
+  background-color: #1E90FF;
+}
+
+.grid {
+  margin-top: 20px;
 }
 
 button {
-  background-color: #1976d2;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #1565c0;
+  background-color: #00BFFF;
+  color: #000;
 }
