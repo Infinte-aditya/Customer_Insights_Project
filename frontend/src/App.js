@@ -7,6 +7,8 @@ function App() {
 
   return (
     <div className="App">
+
+      
       <header className="App-header">
         <h1>Customer Feedback System</h1>
         {!feedbackSubmitted ? (
@@ -14,7 +16,7 @@ function App() {
         ) : (
           <p>Thank you for your feedback!</p>
         )}
-      </header>
+      </header> 
     </div>
   );
 }
