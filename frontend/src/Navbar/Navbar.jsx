@@ -2,6 +2,7 @@ import React from 'react'
 import { ThemeProvider, createTheme, Container, CssBaseline } from '@mui/material';
 import CustomerForm from '../Components/Forms/Customer_Form/CustomerForm';
 import CompanyForm from '../Components/Forms/Company_Form/CompanyForm';
+import Home from '../Components/Home/Home'
 import './Navbar.css'
 import { BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
 
@@ -39,11 +40,13 @@ const Navbar = () => {
             <ul style={{ display: 'flex', justifyContent: 'center', gap: '20px', listStyle: 'none', padding: 0 }}>
               <li><Link to="/customer" style={{ color: '#00e5ff', textDecoration: 'none', fontSize: '1.2rem' }}>Customer</Link></li>
               <li><Link to="/company" style={{ color: '#00e5ff', textDecoration: 'none', fontSize: '1.2rem' }}>Company</Link></li>
+              <li><Link to="/" style={{ color: '#00e5ff', textDecoration: 'none', fontSize: '1.2rem' }}>Home</Link></li>
             </ul>
           </nav>
           <Routes>
             <Route path="/customer" element={<CustomerForm />} />
             <Route path="/company" element={<CompanyForm />} />
+            <Route path="/" element={<Home />} />
           </Routes>
         </Container>
       </Router>
