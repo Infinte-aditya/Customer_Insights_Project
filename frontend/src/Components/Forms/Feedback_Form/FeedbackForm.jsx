@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './FeedbackForm.css'
 
 function FeedbackForm({ setFeedbackSubmitted }) {
   const [name, setName] = useState('');
@@ -55,4 +56,19 @@ function FeedbackForm({ setFeedbackSubmitted }) {
   );
 }
 
-export default FeedbackForm;
+function Feedback() {
+  const [feedbackSubmitted, setFeedbackSubmitted] = useState(false);
+
+  return (
+    <div className="feedback-container">
+      <h1>Customer Feedback System</h1>
+      {!feedbackSubmitted ? (
+        <FeedbackForm setFeedbackSubmitted={setFeedbackSubmitted} />
+      ) : (
+        <p>Thank you for your feedback!</p>
+      )}
+    </div>
+  );
+}
+
+export default Feedback;
