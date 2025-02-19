@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Customer_Insights_Project/static/css/main.d8750449.css",
+    "main.js": "/Customer_Insights_Project/static/js/main.de2d4c8e.js",
+    "static/js/453.8ab44547.chunk.js": "/Customer_Insights_Project/static/js/453.8ab44547.chunk.js",
+    "static/media/pic.jpg": "/Customer_Insights_Project/static/media/pic.2a5bfc0139b1ca9df3a3.jpg",
+    "index.html": "/Customer_Insights_Project/index.html",
+    "main.d8750449.css.map": "/Customer_Insights_Project/static/css/main.d8750449.css.map",
+    "main.de2d4c8e.js.map": "/Customer_Insights_Project/static/js/main.de2d4c8e.js.map",
+    "453.8ab44547.chunk.js.map": "/Customer_Insights_Project/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8750449.css",
+    "static/js/main.de2d4c8e.js"
+  ]
+}
