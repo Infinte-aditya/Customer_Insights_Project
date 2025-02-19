@@ -4,7 +4,7 @@ import CompanyForm from '../Components/Forms/Company_Form/CompanyForm';
 import Home from '../Components/Home/Home';
 import Feedback from '../Components/Forms/Feedback_Form/FeedbackForm'
 import './Navbar.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 
 
