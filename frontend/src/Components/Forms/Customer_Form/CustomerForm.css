@@ -1,0 +1,22 @@
+.customer-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #121212;
+    padding: 32px;
+    border-radius: 8px;
+  }
+  
+  .form-title {
+    color: white;
+  }
+  
+  .text-field {
+    background-color: #333;
+    margin-top: 16px;
+  }
+  
+  .submit-button {
+    margin-top: 16px;
+  }
+  

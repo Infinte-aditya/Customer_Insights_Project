@@ -1,0 +1,35 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #1a2a3a;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 229, 255, 0.5);
+  }
+  
+  .form-title {
+    color: #00e5ff;
+  }
+  
+  .text-field {
+    background-color: #333;
+  }
+  
+  .text-field input,
+  .text-field textarea {
+    color: #fff;
+  }
+  
+  .rating-label {
+    color: #00e5ff;
+  }
+  
+  .rating-stars {
+    color: #00e5ff;
+  }
+  
+  .submit-button {
+    margin-top: 16px;
+  }
+  

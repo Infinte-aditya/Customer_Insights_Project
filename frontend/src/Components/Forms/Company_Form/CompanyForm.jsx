@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TextField, Button, Box, Typography, Grid, Rating } from '@mui/material';
+import './CompanyForm.css';
 
 const CompanyForm = () => {
   const [companyName, setCompanyName] = useState('');
@@ -15,17 +16,8 @@ const CompanyForm = () => {
   };
 
   return (
-    <Box 
-      sx={{ 
-        display: 'flex', 
-        flexDirection: 'column', 
-        gap: 3, 
-        backgroundColor: '#1a2a3a', 
-        padding: 4, 
-        borderRadius: 2,
-        boxShadow: '0px 0px 15px rgba(0, 229, 255, 0.5)',
-      }}>
-      <Typography variant="h5" color="#00e5ff">Company Feedback Form</Typography>
+    <Box className="form-container">
+      <Typography variant="h5" className="form-title">Company Feedback Form</Typography>
       <form onSubmit={handleSubmit}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
@@ -35,7 +27,7 @@ const CompanyForm = () => {
               fullWidth
               value={companyName}
               onChange={(e) => setCompanyName(e.target.value)}
-              sx={{ backgroundColor: '#333', input: { color: '#fff' } }}
+              className="text-field"
             />
           </Grid>
           <Grid item xs={12}>
@@ -45,7 +37,7 @@ const CompanyForm = () => {
               fullWidth
               value={industry}
               onChange={(e) => setIndustry(e.target.value)}
-              sx={{ backgroundColor: '#333', input: { color: '#fff' } }}
+              className="text-field"
             />
           </Grid>
           <Grid item xs={12}>
@@ -55,7 +47,7 @@ const CompanyForm = () => {
               fullWidth
               value={contactPerson}
               onChange={(e) => setContactPerson(e.target.value)}
-              sx={{ backgroundColor: '#333', input: { color: '#fff' } }}
+              className="text-field"
             />
           </Grid>
           <Grid item xs={12}>
@@ -66,16 +58,16 @@ const CompanyForm = () => {
               fullWidth
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              sx={{ backgroundColor: '#333', input: { color: '#fff' } }}
+              className="text-field"
             />
           </Grid>
           <Grid item xs={12}>
-            <Typography component="legend" color="#00e5ff">Company Rating</Typography>
+            <Typography component="legend" className="rating-label">Company Rating</Typography>
             <Rating
               name="simple-controlled"
               value={rating}
               onChange={(event, newValue) => setRating(newValue)}
-              sx={{ color: '#00e5ff' }}
+              className="rating-stars"
             />
           </Grid>
           <Grid item xs={12}>
@@ -87,7 +79,7 @@ const CompanyForm = () => {
               rows={4}
               value={feedback}
               onChange={(e) => setFeedback(e.target.value)}
-              sx={{ backgroundColor: '#333', textarea: { color: '#fff' } }}
+              className="text-field"
             />
           </Grid>
           <Grid item xs={12}>
@@ -96,7 +88,7 @@ const CompanyForm = () => {
               variant="contained" 
               color="primary" 
               fullWidth 
-              sx={{ marginTop: 2 }}
+              className="submit-button"
             >
               Submit Feedback
             </Button>

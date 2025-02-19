@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TextField, Button, Box, Typography } from '@mui/material';
+import './CustomerForm.css';
 
 const CustomerForm = () => {
   const [brandName, setBrandName] = useState('');
@@ -12,16 +13,8 @@ const CustomerForm = () => {
   };
 
   return (
-    <Box 
-      sx={{ 
-        display: 'flex', 
-        flexDirection: 'column', 
-        gap: 3, 
-        backgroundColor: '#121212', 
-        padding: 4, 
-        borderRadius: 2 
-      }}>
-      <Typography variant="h5" color="white">Customer Feedback Form</Typography>
+    <Box className="customer-form-container">
+      <Typography variant="h5" className="form-title">Customer Feedback Form</Typography>
       <form onSubmit={handleSubmit}>
         <TextField
           label="Brand Name"
@@ -29,8 +22,7 @@ const CustomerForm = () => {
           fullWidth
           value={brandName}
           onChange={(e) => setBrandName(e.target.value)}
-          color="primary"
-          sx={{ backgroundColor: '#333' }}
+          className="text-field"
         />
         <TextField
           label="Product Type"
@@ -38,8 +30,7 @@ const CustomerForm = () => {
           fullWidth
           value={productType}
           onChange={(e) => setProductType(e.target.value)}
-          color="primary"
-          sx={{ backgroundColor: '#333', marginTop: 2 }}
+          className="text-field"
         />
         <TextField
           label="Model Name/No"
@@ -47,15 +38,14 @@ const CustomerForm = () => {
           fullWidth
           value={modelName}
           onChange={(e) => setModelName(e.target.value)}
-          color="primary"
-          sx={{ backgroundColor: '#333', marginTop: 2 }}
+          className="text-field"
         />
         <Button 
           type="submit" 
           variant="contained" 
           color="primary" 
           fullWidth 
-          sx={{ marginTop: 2 }}
+          className="submit-button"
         >
           Submit Feedback
         </Button>
