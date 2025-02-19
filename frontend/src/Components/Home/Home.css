@@ -1,0 +1,27 @@
+.container{
+    outline: 1px solid rgb(220, 13, 193);
+    width: 100%;
+    max-width: 100vw;
+    margin-top: 10%;
+}
+
+.body{
+    display: grid;
+    outline: 1px solid rgb(0, 255, 179);
+    grid-template-columns: 60% 40%;
+    height: 100%;
+}
+
+.pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid red;
+}
+
+.intro{
+    display: flex;
+    outline: 1px solid red;
+    align-items: center;
+    justify-content: center;
+}
