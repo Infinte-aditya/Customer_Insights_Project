@@ -44,6 +44,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://Infinte-aditya.github.io/Customer_Insights_Project"
-
+  "homepage": "https://Infinte-aditya.github.io/Customer_Insights_Project",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
