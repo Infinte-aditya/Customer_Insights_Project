@@ -1,2 +1,2 @@
 # Customer_Insights_Project
-Created for a hackathon
+Created as a part of the DBMS course
